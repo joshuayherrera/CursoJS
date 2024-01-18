@@ -20,18 +20,24 @@ const ejercicio25 = (arreglo = undefined) => {
     if(arreglo === undefined) return console.warn("NO has ingresado ningun arreglo")
     if(!(arreglo instanceof Array)) return console.warn(`${arreglo} NO es un arreglo`)
     if(arreglo.every(element => typeof element === undefined)) return console.error(`NO has ingresado un array completo`)
-
+    /*
     const newArray = []
     for (const i of arreglo) {
         if (!newArray.includes(i)) {
             newArray.push(i)
         }
     }
-    console.info(newArray)
+    console.info(newArray)*/
+
+    //Set es como un arreglo que no repite el mismo elemento dos veces en el arreglo.
+    const newArray2 = new Set(arreglo)
+    console.log(newArray2)
 }
 
-
 //ejercicio25(["x", 10, "x",2, "10", 10, true, true])
+
+
+
 
 /*26) Programa una función que dado un arreglo de números obtenga el promedio, pe. promedio([9,8,7,6,5,4,3,2,1,0]) devolverá 4.5.*/
 
@@ -48,5 +54,5 @@ const ejercicio26 = (numeros = undefined) => {
     let promedio = sumaTotal/numeros.length
     return console.info(promedio)
 }
-
-ejercicio26([9,8,7,6,5,4,3,2,1,0])
+/*
+ejercicio26([9,8,7,6,5,4,3,2,1,0])*/

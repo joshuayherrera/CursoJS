@@ -284,7 +284,7 @@ function multiplicar (x,y,...z) {
 console.log(multiplicar(2,3,3,3,2))
 
 /***********************OPERADOR SPREAD*************************
-//para juntar arrays
+//para crear un array a partir de la copia de uno
 const arr1 = ["white" , "red", "yellow"],
 arr2 = [1, 2, 3, 4]
 
